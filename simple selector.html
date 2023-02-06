@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple selector</title>
+    <style>
+        /* p{
+            text-align:center;
+            color:red;
+        }
+        #para1{
+            text-align:center; 
+            color:Red;
+        }
+        .center{
+            text-align:center;
+            color:Red;
+        }
+        p.center{
+            text-align: center;
+            color:red;
+        }
+        p.large{
+            font-size:300%;
+        }*/
+        *{
+            text-align: center;
+            color:blue;
+        }
+        h1,span{
+            background-color:aqua;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Simple selector</h1>
+    <span>my best friend is mickey</span>
+    <p>Every element on the page will be affectd by the style</p>
+    <p id="para1">Every Element on the page will be affected by the style</p>
+    <div id="para1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus vitae iure fugiat ab dignissimos ex blanditiis nemo voluptates distinctio sit fugit eum similique sed voluptatum quidem possimus, sequi neque pariatur tempora debitis molestias? Repudiandae quia ut ducimus hic incidunt cupiditate perferendis tempora molestias inventore fuga culpa doloribus earum porro sunt impedit, temporibus autem beatae vel sequi repellendus quasi! Nulla dignissimos recusandae atque fuga, facilis autem. Repellat voluptatibus sapiente fugit pariatur deserunt, illo praesentium sunt mollitia quidem exercitationem odio consequuntur aliquid minus neque, tenetur modi vel, animi adipisci cum deleniti tempora? Distinctio sint ipsa tempora suscipit quas veniam voluptatem amet sequi!
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti provident eos repellendus vitae impedit officia nobis aperiam harum exercitationem sapiente assumenda in quibusdam non, laudantium odio dicta. Cupiditate sapiente quas eveniet aliquam vitae totam voluptatem quidem nulla perferendis, nam, unde iste ipsa mollitia autem velit obcaecati cumque error quibusdam at rerum. Similique officiis nihil voluptates consequatur vitae eveniet facilis quam repellendus sed! Quis et distinctio deleniti officiis ab voluptatum. Cupiditate laudantium magnam laboriosam aperiam quis. Assumenda maiores totam dignissimos. At ea accusantium officiis aperiam eaque, et voluptas recusandae sit, placeat facere minima! Quod fugit, voluptate illum ad cumque architecto eum.</p>
+    
+    <h1 class="center">
+        This heading will being will not affected
+    </h1>
+    <div class="center">
+        Red and center-aligned heading
+    </div>
+    <p class="center">
+        This paragraph will be red and center-aligned
+    </p>
+    <p class="center large">
+        This paragraph will be red center aligned and in a large font-size
+    </p>
+</body>
+</html>

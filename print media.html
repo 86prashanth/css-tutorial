@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		How to create printable webpage
+		using CSS media queries?
+	</title>
+
+	<style>
+		body {
+			text-align: center;
+		}
+
+		h1 {
+			color: green;
+		}
+
+		@media print {
+			.noprint {
+				visibility: visible;
+			}
+		}
+	</style>
+</head>
+
+<body class="noprint">
+	<h1>Print media</h1>
+
+	<p>
+		print media: It is a computer
+		science portal for geeks
+	</p>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        :root{
+            --main-color:brown;;
+        }
+        body{
+            font-family: arial,Arial, Helvetica;
+            background: slategray;
+            margin:0;
+            padding:0;
+        }
+        #wrapper{
+            border:1px solid black;
+            width:100%;
+            background:(--main-color);
+            margin:0 auto;
+        }
+        #header{
+            background:red;
+            padding:25px;
+            text-align:center;
+            text-transform: uppercase;
+            height:100px;
+        }
+        #menu ul{
+            margin:0;
+            padding:0;
+            background:orange;
+        }
+        #menu li{
+            background:(--main-color);
+            display:inline-block;
+        }
+        #menu li a{
+            display:block;
+            padding:10px 10px;
+            text-decoration: none;
+        }
+        #content{
+            width:800px;
+            float:left;
+            padding:20px;
+            min-height:500px;
+            box-sizing: border-box;
+        }
+        #sidebar{
+            width:500px;
+            height:600px;
+            float:right;
+            background-color: lightblue;
+        }
+        #sidebar a{
+            text-decoration: none;
+        }
+        #footer{
+            background:lightsalmon;
+            clear:both;
+            padding:5px 5px;
+            text-align:right;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>Nanda's platform</h1>
+        </div>
+        <div id="menu">
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Gallery</a></li>
+               <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>Sub heading</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni consequuntur et aperiam, nobis voluptas, necessitatibus explicabo quidem in asperiores eum deleniti dolor vitae sint accusantium possimus voluptatum minima culpa veniam soluta repellat eligendi quaerat iusto laudantium! Harum voluptatibus necessitatibus officiis laboriosam commodi. Omnis blanditiis eligendi porro quidem velit voluptates et earum delectus pariatur iste temporibus corrupti ab quis rerum voluptate laborum, nam, quisquam, magni repellat alias libero. Natus quisquam cumque blanditiis, pariatur, sed neque ipsam dicta dolore officia, veritatis atque nemo laboriosam nesciunt provident adipisci odit magnam aut error laborum nostrum quidem? Exercitationem illum mollitia tempora porro cumque deleniti labore.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam in, qui, beatae quod dolor reprehenderit incidunt inventore numquam corporis, optio sequi quos quas nostrum dignissimos debitis nulla sit nam vel fugit deleniti placeat facilis assumenda vero minima? Fugiat cumque impedit praesentium iste illum ipsam odit ea ullam, accusantium rerum dolores aliquam laborum nam deleniti nostrum cupiditate reprehenderit officiis a? Labore pariatur accusantium sint quidem qui ad, vitae in vel, consequuntur, aliquid est iure debitis ut! Accusamus neque voluptatibus optio fugiat, laboriosam dolorem, expedita, nihil veritatis atque aut dolor aliquid. Ad suscipit sit quas quam corporis. Deserunt, magnam temporibus. In, dicta.</p>
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Gallery</a></li>
+               <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            <p>Nanda'splatform@copyright2023</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table properties</title>
+    <style>
+        table{
+            border-spacing:10px;
+            border-collapse:collapse;
+            width:300px;
+            empty-cells: hide;
+            table-layout:auto;
+        }
+        td{
+            vertical-align:middle;
+            padding:10px;
+        }
+        table,th,td{
+            border:1px solid #000;
+        }
+        caption{
+            caption-side:unset;
+        }
+        tr:hover{
+            background:#f2f2f2;
+        }
+        tr:nth-child(even){
+            background:#f5f5;
+        }
+    </style>
+</head>
+<body>    <h2>table properties</h2>
+    <table cellpadding="10px">
+        <caption>employee table</caption>
+        <tr>
+            <th>Name</th>
+            <th>First name Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, impedit!</th>
+            <th>Last Name</th>
+        </tr>
+        <tr>
+            <td>prashanth Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, rem.</td>
+            <td>prashanth</td>
+            <td>prashanth</td>
+        </tr>
+        <tr>
+            <td>prashanth</td>
+            <td>prashanth</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>prashanth</td>
+            <td>prashanth</td>
+            <td>prashanth</td>
+        </tr>
+    </table>
+</body>
+</html>

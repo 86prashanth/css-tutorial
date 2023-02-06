@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input range</title>
+    <style>
+        input:in-range{
+            border:2px solid orange;
+            border-radius:12px;
+        }
+        p:hover{
+            color:red;
+        }
+        input:focus{
+            color:red;
+        }
+        p:first-of-type{
+            background:red;
+        }
+        p::first-letter{
+            font-size:200%;
+            color: #8a8a8a;
+        }
+        span::first-line{
+            color:red;
+        }
+        i::after{
+            content: "i have no idea"
+        }
+        input:checked{
+            height:20px;
+            width:20px;
+        }
+        input[type=text]:disabled{
+            background:#dddddd;
+        }
+        input:invalid{
+            border:2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h3>Demo of the in-range selector</h3>
+    <input type="number" min="5" max="10" value="7">
+    <p>Try typing...</p>
+    Email: <input type="email" name="email">
+<form action="">
+  firstname:<input type="text" name="firstname">
+  lastname:<input type="text" name="lastname">
+
+</form>
+<p>THE FIRST PARAGRAPH</p>
+<i>my name is </i>
+<p>My name is donald</p>
+<p>I live in duckring</p>
+<p>my best friend tutty</p>
+
+
+<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quam provident unde ex, impedit expedita optio quis reiciendis consequuntur necessitatibus eaque distinctio quibusdam quia quas accusamus! Dolorem delectus sapiente perspiciatis, voluptate est quidem consequuntur cumque dignissimos sequi, fuga rerum ad obcaecati, eligendi iure laborum quo cupiditate dolore unde. Dolores, aperiam culpa magni odit doloribus maxime, excepturi quo tenetur, dolorem iure doloremque corrupti nesciunt. Asperiores, adipisci. Consequatur saepe ullam explicabo, vel assumenda omnis quae deleniti ea minima iusto culpa, distinctio dolor odio, repudiandae commodi delectus eum dolore pariatur iste rerum quod maxime architecto placeat. Facere sed, ab a id similique illo.</span>
+
+<input type="radio" name="radio" checked="checked" value="yes" name="gender">male<br>
+<input type="radio" name="radio" checked="checked" value="bike">NO
+<input type="text" name="text" disabled="disabled">
+<input type="text" name="text">
+</body>
+</html>

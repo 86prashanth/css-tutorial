@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter increment</title>
+    <style>
+        body{
+            counter-reset:section 0;
+        }
+        h1{
+            counter-reset: subsection;
+            color:green;
+        }
+        h1::before{
+            counter-increment:section;
+            content: "section " counter(section,upper-roman) ": ";
+            counter-increment:section;
+        }
+        
+        h2::before{
+            counter-increment:section;
+            content: counter(section) "." counter(subsection) ": ";
+            counter-increment: subsection;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Html css </h1>
+    <h2>Html tutorial </h2>
+    <h2>Css tutorial </h2>
+    <h2>Css tutorial </h2>
+    <hr>
+    <h1>Javascript</h1>
+    <h2>Javascrip tutorial</h2>
+    <h2>Jquery tutorial</h2>
+    <hr>
+    <h1>Server side</h1>
+    <h2>Sql tutorial</h2>
+    <h2>php tutorial</h2>
+</body>
+</html>
+</html>

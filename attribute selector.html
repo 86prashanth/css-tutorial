@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute selector</title>
+    <style>
+        a[target]{
+            color: yellow;
+        }
+        a[target='_blank']{
+            color:red;
+        }
+        [title~='image']{
+            border:5px solid red;
+        }
+        [class|=top]{
+            background:orange;
+        }
+        [class^="css"]{
+            background:red;
+        }
+        [class $="test"]{
+            color:green;
+        }
+        [class*="mo"]{
+            background:grey;
+        }
+
+    </style>
+</head>
+<body>
+<h2>css[attribute] selector</h2>
+<a href="https://www.google.com" target="_blank">google</a>
+<a href="https://www.facebook.com" target="_top">Facebook</a>
+<a href="https://www.wikipedia.com">wikipedia</a>
+<h4>css[attribute~="value"] selector</h4>
+<img src="images/bg.jpg" alt="images" title="image" width="150" height="150">
+<img src="images/b1.jpg" alt="images" title="flower" width="150" height="150">
+<img src="images/bg.jpg" alt="images" title="vikram" width="150" height="150">
+<h3>css [attribute|="value"] selector</h3>
+<h1 class="top-header">top header</h1>
+<p class="top-text">top text</p>
+<p class="topcontent">Top content</p>
+<h3>css [attribute^="value"] selector</h3>
+<h1 class="css-reading">css reading</h1>
+<p class="css-text">Top text</p>p
+<p class="csscontent">Are you learnign css</p>
+<h1>[attribute $="value"] selector</h1>
+<div class="first_test">the first div element</div>
+<div class="second">the second div element</div>
+<div class="my-test">the third div element</div>
+<div class="mytest">This is some text in a paragraph</div>
+<h5>[attribute*="value"] selector</h5>
+<div class="first_mode">The first div element</div>
+<div class="second">The second div element</div>
+<div class="my-mode">The third div element</div>
+<div class="mymode">This is some text in a paragraph</div>
+<
+    /body>
+</html>

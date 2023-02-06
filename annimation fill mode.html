@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation fill mode</title>
+    <style>
+        .box{
+            width:150px;
+            height:150px;
+            background:black;
+            margin-left:20px;
+            animation:sample 2s 5s forwards infinite;
+        }
+        .box:hover{
+            animation-play-state: paused;
+        }
+        @keyframes sample{
+            0% { background:yellow; width:250px;}
+            50% { background:green; width:350px;}
+            100% { background:red; width:450px;}
+        }
+    </style>
+</head>
+<body>
+   <h2>Animation fill mode</h2> 
+   <div class="box">
+
+   </div>
+</body>
+</html>

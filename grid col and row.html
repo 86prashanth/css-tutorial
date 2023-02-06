@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid items</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica;
+        }
+        .container{
+            background: #eee;
+            grid-gap:20px;
+            width:700px;
+            height:800px;
+            margin:70px 0 0 50px;
+            display: grid;
+            grid-template-columns:150px 150px;
+            grid-template-rows: 150px 150px;
+        }
+        .items1{
+            background: orange;
+            grid-row-start:2;
+            grid-row-end:3;
+            grid-column-start: 3;
+            grid-column-end:4;
+            z-index:1;
+        }
+        .items2{
+            background: red;
+            grid-row:2/3;
+            grid-column:3/4;
+            grid-area:2/3/4;
+        }
+        .items3{
+            background: green;
+            grid-column:2/4;
+            grid-row:2/3;
+        }
+        .items4{
+            background: yellow
+        }
+        .items5{
+            background:blue;
+        }
+        .items6{
+            background:gray;
+        }
+    </style>
+</head>
+<body>
+    <h2>grid items</h2>
+    <div class="container">
+        <div class="items1">First</div>
+        <div class="items2">Second</div>
+        <div class="items3">Third</div>
+        <div class="items4">Fourth</div>
+        <div class="items5">Fifth</div>
+        <div class="items6">Sixth</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent selector</title>
+    <style>
+        div+p{
+            background-color: yellow;;
+        }
+        div ~ span{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h3>Adjacent sibiling selector</h3>
+    <div>
+        <p>paragraph 1 div</p>     
+        <p>paragraph 2 div</p>
+    </div>
+        <p>paragraph 3 div</p>     
+        <p>paragraph 4 div</p>     
+      <h5>General sibiling selector</h5>
+      <div>
+        <span>paragraph1</span>
+      </div>
+      <span>computer application</span>
+      <code>some code</code>
+      <span>this is computer</span>
+</body>
+</html>
